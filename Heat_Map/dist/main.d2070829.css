@@ -1,0 +1,29 @@
+/* Main body of the page */
+
+body {
+    /* Make web page dark */
+    background-color: #1e1e1e;
+}
+
+/* Header */
+.jumbotron {
+    /* Colorize and make header smaller */
+    background: linear-gradient(#0f6913 0%, #1e1e1e 100%);
+    color: #fefefe;
+    height: 10hv;
+    padding: 20px;
+}
+
+/* Map */
+#MapCanvas {
+    /* Customize Map. The height must be set with some value, because the default height is 0*/ 
+    height: 78vh;
+    margin:30px;
+    border: 5px solid #0f6913
+}
+
+#map{
+    position: relative;
+}
+
+/*# sourceMappingURL=/main.d2070829.css.map */

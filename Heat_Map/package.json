@@ -1,0 +1,35 @@
+{
+  "name": "geolocation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/main.html",
+    "build": "parcel build src/main.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.17",
+    "@babel/preset-react": "^7.12.13",
+    "@parcel/babel-plugin-transform-runtime": "^2.0.0-nightly.1823",
+    "@parcel/babel-preset-env": "^2.0.0-alpha.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-runtime": "^6.26.0",
+    "parcel-bundler": "^1.12.4"
+  },
+  "babel": {
+    "presets": [
+      "@parcel/babel-preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@parcel/babel-plugin-transform-runtime"
+    ]
+  },
+  "dependencies": {
+    "heatmap.js": "^2.0.5",
+    "leaflet": "^1.7.1",
+    "leaflet-heatmap": "^1.0.0"
+  },
+  "description": ""
+}

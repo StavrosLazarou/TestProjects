@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+  <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Visualization and Charts</title>
+
+  <!-- Call jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+  <!-- Call bootstrap 4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <!-- Call Leafleat JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin="">
+  </script>
+
+  <!-- Call AMChart -->
+  <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/themes/dark.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+  
+  <!-- Call Javascript file -->
+  <script type="module" src="Javascript/index.js"></script>
+    
+  <!-- Call CSS file -->
+  <link rel="stylesheet" href="./Style/index.css">
+
+</head>
+<body>
+  
+ <!-- Create header of the page -->
+ <!-- Navigation Bar -->
+ <nav class="nav navbar navbar-expand-sm">
+  
+  <!-- Brand -->
+  <div class="navbar-header">
+        <h1 class="navbar-brand">Data Visualization</h1>
+  </div>
+  
+  <!-- Project buttons -->
+  <div class="navbar-nav">
+    <div class="btn-group">
+      <button class="btn btn-success" id="PieChart" type="button">Pie Chart</button>
+      <button class="btn btn-success" id="BarChart" type="button">Bar Chart</button>
+    </div>
+  </div>
+    
+  <!-- Reset Button -->
+  <div class="navbar-nav ml-auto">
+      <button class="btn hide" id="reset" type="button">Reset Filters</button>
+    </div>
+  </nav> 
+  
+  <!-- 2 Column layout that include the map and Chart -->
+  <div class="container-fluid">
+      <div class="row">
+        <div class="col-*-6" id="MapCanvas" ></div> <!-- Map -->
+        <div class="col-*-4" id="Pie"></div> <!-- Pie Chart -->
+        <div class="col-*-4 hide" id="Bar"></div> <!-- Bar Chart -->
+      </div>
+  </div>
+
+</body>
+</html>

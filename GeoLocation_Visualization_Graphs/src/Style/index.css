@@ -1,0 +1,54 @@
+/* Main Body of page */
+body {
+    /* Make web page dark */
+    background-color: #1e1e1e;
+    color:#fefefe;
+}
+
+/* Header bar */
+.nav {
+    /* Colorize and make header smaller */
+    background-color: #0f6913;
+    color: #fefefe;
+    height: 10hv;
+    padding: 20px;
+}
+
+.navbar-brand{
+    font-size: x-large;
+}
+
+#PieChart,#BarChart,#reset{
+    color: #fefefe;
+    background-color: #0f5a0f;
+    border: .5px solid #0f6915;
+    box-shadow: none;
+}
+
+.hide{
+    display: none;
+}
+
+/* Map Container */
+
+#MapCanvas {
+    /* Customize Map. The height must be set with some value, because the default height is 0  */
+    height:78vh;
+    width:45vw;
+    margin:20px 20px 20px 20px;
+    border: 5px solid #0f6913
+}
+
+/* Chart Container */
+
+#Pie {
+    width:47vw;
+    height:78vh;
+    margin: 20px 20px 20px 20px;
+}
+
+#Bar {
+    width:47vw;
+    height:78vh;
+    margin: 20px 20px 20px 20px;
+}
